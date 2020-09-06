@@ -20,6 +20,7 @@ print(add(*lst))
 
 def foo(**kwargs):
     print(kwargs)
+    
 foo()
 foo(x=1, y=2)
 
