@@ -9,6 +9,7 @@ def sort_priority(values, group):
 def sort_priority2(numbers, group):
     found = False
     def helper(x):
+        nonlocal found
         if x in group:
             found = True
             return(0, x)
