@@ -26,3 +26,8 @@ def log2(message, when=None):
 log2('Hi there! (log2)')
 sleep(1)
 log2('Hello again! (log2)')
+
+
+# デフォルト引数は一度しか評価されない．モジュール読み込み時の関数定義の時．動的な値をデフォルト引数に入れるとバグる． 
+# このときはNoneにするのが良い．Docstringにもその旨を記載．
+# デフォルトのNoneはかたヒントでも正しく動作する．
