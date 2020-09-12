@@ -4,6 +4,11 @@ def log(msg, *values):
     else:
         values_str = ','.join(str(x) for x in values)
         print(f'{msg}: {values_str}')
+        
 
 log('My numbers are', 1, 2)
 log('Hi there')
+
+# not slice, using catch all unpack
+favorites = [7, 33, 99]
+log('Facorite colors', *favorites)
